@@ -1,0 +1,290 @@
+@import url('https://fonts.googleapis.com/css2?family=Martel+Sans:wght@600&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background-color: black;
+}
+
+
+main{
+    background-image: url(image/IN-en-20240107-trifectadaily-perspective_alpha_website_small.jpg);
+    height: 70vh;
+    position: relative;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: max( 1200px , 100vw);
+}
+
+.box{
+    height: 70vh;
+    width: 100%;
+    opacity: 0.7;
+    background-color: black;
+    position: absolute;
+    top: 0;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    max-width: 60vw;
+    margin: auto;
+    justify-content: space-between;
+    height: 62px;
+}
+
+nav img{
+    color: red;
+    width: 130px;
+    position: relative;
+    z-index: 10;
+}
+
+nav button{
+    position: relative;
+    z-index: 10;
+}
+
+.hero{
+    font-family: 'Martel Sans', sans-serif;
+    height: calc(100% - 62px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: white;
+    font-size: 25px;
+    position: relative;
+    z-index: 10;
+    gap: 25px;
+    padding: 0 30px;
+}
+
+.hero> :first-child{
+    font-weight: bolder;
+    font-size: 48px;
+    text-align: center;
+}
+
+.hero> :nth-child(2){
+    font-weight: 700;
+    font-size: 20px;
+    text-align: center;
+}  
+
+.seperation{
+    height: 7px;
+    background-color: rgb(56, 54, 54);
+}
+
+.btn{
+    padding: 3px 10px;
+    font-weight: 400;
+    background-color: rgba(248, 243, 243, 0.068);
+    color: white;
+    border-radius: 4px;
+    border-color: rgba(150, 15, 15, 0);
+    border: 1px solid white;
+    cursor: pointer;
+
+}
+
+.btn-red{
+    background-color: red;
+    color: white;
+    padding: 3px 24px;
+    font-size: 20px;
+    border-radius: 4px;
+    border-color: rgba(150, 15, 15, 0);
+    font-weight: 400;
+}
+
+.btn-red-sm{
+    background-color: red;
+    color: white;
+    border-color: rgba(0, 0, 0, 0);
+    padding: 3px 10px;
+    font-size: 15px;
+    border-radius: 4px;
+
+}
+
+.herobuttons{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+}
+
+.input{
+    padding: 7px 100px 8px 14px;
+    color: white;
+    font-weight: 900;
+    font-size: 12px;
+    border-radius: 4px;
+    background-color: rgba(23, 23, 23, 0.7);
+    border: 1px solid rgba(243, 238, 238, 0.5);
+
+}
+
+.first{
+    display: flex;
+    justify-content: center;
+    max-width: 70vw;
+    margin: auto;
+    color: white;
+    justify-content: center;
+    align-items: center;
+}
+
+@media  screen and (max-width: 1300px) {
+    .first{
+        flex-wrap: wrap;
+    }
+
+    nav{
+        max-width: 90vw;
+        height: 65px;
+    }
+
+    .herobuttons{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .hero{
+        gap: 13px;
+        font-size: 18px;
+        text-align: center;
+    }
+
+    .hero> :first-child{
+        font-size: 38px;
+    }
+
+    .hero> :nth-child(2){
+        font-size: 24px;
+    }  
+
+    .first{
+        font-size: 32px;
+    }
+
+    .first > div :first-child{
+        font-size: 38px;
+    }
+    
+    .first > div :nth-child(2){
+        font-size: 20px;
+    }
+    
+}
+
+.img img{
+    width: 462px;
+    position: relative;
+    z-index: 10;
+}
+
+.img{
+    position: relative;
+}
+
+.img video{
+    position: absolute;
+    top: 61px;
+    right: 0;
+    width: 401px;
+}
+
+.sectioon.first > div{
+    display: flex;
+}
+
+.first > div :first-child{
+    font-size: 48px;
+    font-weight: bolder;
+}
+
+.first > div :nth-child(2){
+    font-size: 24px;
+    font-weight: bolder;
+} 
+
+.faq h2{
+    font-size: 48px;
+    text-align: center;
+}
+
+.faq{
+    background: black;
+    color: white;
+    padding: 34px;
+}
+
+.faqbox{
+    font-size: 24px;
+    display: flex;
+    background-color: #2d2d2d;
+    padding: 20px;
+    max-width: 60vw;
+    margin: 34px auto;
+    justify-content: space-between;
+    cursor: pointer;
+    transition: all 1s ease-out;
+}
+
+.faqbox:hover{
+    background-color: #414141;
+}
+
+footer{
+    color: white;
+    max-width: 60vw;
+    margin: auto;
+    padding: 14px;
+}
+
+.footer{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    color: white;
+    
+    
+}
+
+@media  screen and (max-width: 1300px) {
+    .footer{
+        display: grid;
+        grid-template-columns: 1fr 1fr ;
+        color: white;
+    }    
+       
+    
+}
+
+.footer-item{
+    display: flex;
+    flex-direction: column;
+}
+
+footer .questions{
+    padding: 34px 0;
+   
+}
+
+.footer-item a{
+    text-decoration: none;
+    color: white;
+    gap: 23px;
+    font-size: 14px;
+}
+
+.footer:hover{
+    text-decoration: underline;
+
+}
